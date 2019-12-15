@@ -75,11 +75,9 @@ a {
 </head>
 <body>
 
-{#<form action="/action_page.php">#}
 <form>
   <div class="container">
     <h1>Register</h1>
-      <h1 id="check">asdasdasdsad</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
@@ -116,10 +114,13 @@ a {
             //};
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'newReg.html', true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
             var uname = document.getElementById("name1").value;
             var psw = document.getElementById("name2").value;
             var psw2 = document.getElementById("name3").value;
-            xhr.send(uname+"&"+psw);
+            //user = { "uname": uname, "psw": psw};
+            //xhr.send(uname+"&"+psw);
+            xhr.send(JSON.stringify({ "uname": uname, "psw": psw}))
                 var date = new Date();
                 var curDate = null;
                 do { curDate = new Date(); }

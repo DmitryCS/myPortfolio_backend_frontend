@@ -5,40 +5,27 @@
     <title>login</title>
     <div id="insertNavMenu"></div>
     <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../static/loginStyles.css" />
 </head>
 <body>
 
-    <!-- The Modal -->
-    <div id="id01" class="modal">
+    <div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input id="uname" type="text" placeholder="username"/>
+      <input id="psw" type="password" placeholder="password"/>
+      <button onclick="Login()" type="submit">login</button>
+      <p class="message">Not registered? <a href="register.html ">Create an account</a></p>
+    </form>
+  </div>
+</div>
 
-
-      <!-- Modal Content -->
-      <form class="modal-content animate">
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
-
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
-
-          <button onclick="Login()" type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
     <script type="text/javascript">
-        if(document.cookie!=""){
-            uname = document.cookie;
-            window.location.replace('/');
-            document.getElementById("id01").innerHTML = '<h1> Welcome, '+uname + '!</h1>';
-        }
+        {#if(document.cookie!=""){#}
+        {#    uname = document.cookie;#}
+        {#    window.location.replace('/');#}
+        {#    document.getElementById("id01").innerHTML = '<h1> Welcome, '+uname + '!</h1>';#}
+
         function Login(){
             /*uname = document.getElementById("uname").value;
             psw = document.getElementById("psw").value;

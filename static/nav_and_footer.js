@@ -6,9 +6,14 @@ document.getElementById("insertNavMenu").innerHTML =
                 <li><a href="langs.html">Do I know computer languages?</a></li>        
                 <li><a href="ican.html">What can I do?</a></li>           
                 <li><a href="exs.html">Examples of work</a></li>
-                <li id="lgn"><a href="login.html">Login</a></li>
+                <li><a href="grid.html">Grid of people</a></li>
+                <li id="lgn" class="before_last"><a href="login.html">Login</a></li>
                 <li id="lgn2"><a href="register.html">Register</a></li>               
             </ul>
+<!--             <ul class="secondUL">-->
+<!--                <li id="lgn" class="before_last"><a href="login.html">Login</a></li>-->
+<!--                <li id="lgn2"><a href="register.html">Register</a></li>             -->
+<!--            </ul>-->
         </nav>`;
         if(document.cookie!=""){
                 document.getElementById("lgn").innerHTML = `<a href="profile.html">${document.cookie}</a>`;
