@@ -2,6 +2,9 @@
 body {margin:0;  font-family: 'Open Sans', Arial, sans-serif;}
 h1{
     color: #191970;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 }
 h2 {
   font-family: monospace;
@@ -14,7 +17,7 @@ h3 {
     padding-top: 15px;
 }
 ul {
-  list-style: none; 
+  list-style: none;
   margin: 0 auto;
 }
 a {
@@ -59,13 +62,13 @@ nav {
     background-size: 100% 40px;
 }
 .footer li{
-  display: inline;   
+  display: inline;
   margin-left: 10px;
 }
 
 .footer ul{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 
@@ -76,4 +79,11 @@ nav {
 
 .otstup{
     margin-left: 130px;
+}
+
+.image{
+    width: 310px;
+    height: 420px;
+    float: left;
+    margin: 10px 20px 10px 20px;
 }

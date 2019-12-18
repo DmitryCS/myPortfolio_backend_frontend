@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>My profile</title>
-
-    <div id="insertNavMenu"></div>
     <link rel="stylesheet" type="text/css" href="../static/styles.css" />
 </head>
 <body>
-<h1>You are in your profile.</h1>
- <form class="change" name="test" method="post">
-  <p><b>Новый логин:</b><br>
-   <input id="name" type="text" size="40" required><br>
-      <b>Новый пароль:</b><br>
-   <input id="psw" type="text" size="40" required><br>
-{#      <b>Ссылка на фото:</b><br>#}
-{#   <input id="photo" type="text" size="40" required>#}
-  </p>
-{#  <p>#}
-{#   <input id="twitter" type="text"> Введите ссылку на twitter<Br>#}
-{#   <input id="instagram" type="text"> Введите ссылку на instagram<Br>#}
-{#   <input id="github" type="text"> Введите ссылку на github<Br>#}
-{#  </p>#}
-  <p class="otstup"><input onclick="updateData()" type="submit" value="Отправить">
-   <input type="reset" value="Очистить"></p>
- </form>
-
-
+    <header>
+        <div id="insertNavMenu"></div>
+    </header>
+    <main>
+        <h1>You are in your profile.</h1>
+         <form class="change" name="test" method="post">
+          <p><b>Новый логин:</b><br>
+           <input id="name" type="text" size="40" required><br>
+              <b>Новый пароль:</b><br>
+           <input id="psw" type="text" size="40" required><br>
+        {#      <b>Ссылка на фото:</b><br>#}
+        {#   <input id="photo" type="text" size="40" required>#}
+          </p>
+        {#  <p>#}
+        {#   <input id="twitter" type="text"> Введите ссылку на twitter<Br>#}
+        {#   <input id="instagram" type="text"> Введите ссылку на instagram<Br>#}
+        {#   <input id="github" type="text"> Введите ссылку на github<Br>#}
+        {#  </p>#}
+          <p class="otstup"><input onclick="updateData()" type="submit" value="Отправить">
+           <input type="reset" value="Очистить"></p>
+         </form>
+    </main>
+    <footer>
+        <div id="insertFooter"></div>
+    </footer>
  <script type="text/javascript">
         function updateData(){
            var xhr = new XMLHttpRequest();
@@ -53,9 +57,6 @@
             };
         }
     </script>
-
-
-<div id="insertFooter"></div>
     <script src="../static/nav_and_footer.js" type="text/javascript"></script>
 </body>
 </html>
