@@ -94,7 +94,7 @@ a {
             <hr>
             <p>By creating an account you agree to our <a href="rules.html" target="_blank">Terms & Privacy</a>.</p>
 
-            <button type="submit" onclick="regMe()" class="registerbtn">Register</button>
+            <button type="button" onclick="regMe()" class="registerbtn">Register</button>
           </div>
 
           <div class="container signin">
@@ -125,10 +125,10 @@ a {
             //user = { "uname": uname, "psw": psw};
             //xhr.send(uname+"&"+psw);
             xhr.send(JSON.stringify({ "uname": uname, "psw": psw}));
-                var date = new Date();
-                var curDate = null;
-                do { curDate = new Date(); }
-                while(curDate-date < 100);
+                {#var date = new Date();#}
+                {#var curDate = null;#}
+                {#do { curDate = new Date(); }#}
+                {#while(curDate-date < 100);#}
             xhr.onreadystatechange = function() {
                 var serverResponse = xhr.responseText;
                 {#var xhr = new XMLHttpRequest();#}

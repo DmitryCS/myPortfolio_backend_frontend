@@ -16,7 +16,7 @@
             <form class="login-form">
               <input id="uname" type="text" placeholder="username"/>
               <input id="psw" type="password" placeholder="password"/>
-              <button onclick="Login()" type="submit">login</button>
+              <button onclick="Login()" type="button">login</button>
               <p class="message">Not registered? <a href="register.html ">Create an account</a></p>
             </form>
           </div>
@@ -46,10 +46,10 @@
             var psw = document.getElementById("psw").value;
 
             xhr.send(uname+"&"+psw);
-               var date = new Date();
-            var curDate = null;
-            do { curDate = new Date(); }
-            while(curDate-date < 100);
+            {#   var date = new Date();#}
+            {#var curDate = null;#}
+            {#do { curDate = new Date(); }#}
+            {#while(curDate-date < 100);#}
 
             xhr.onreadystatechange = function() {
                 var serverResponse = xhr.responseText;

@@ -186,6 +186,7 @@ def rules():
 
 @app.route('/checkUser.html', methods=['POST'])
 def check_user():
+    #time.sleep(10)
     #if request.method == 'POST':
     data = request.data.decode("utf-8")
     login_psw = data.split('&')
